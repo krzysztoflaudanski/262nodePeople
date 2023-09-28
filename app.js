@@ -18,7 +18,7 @@ const male = [
   "Bartłomiej", "Dominik", "Piotrek", "Hubert", "Adrian", "Mikołaj", "Józef", "Kornel", "Bogdan", "Zbigniew"
 ];
 
-const firstName = [
+const lastName = [
   "Nowak", "Kowalski", "Wiśniewski", "Wójcik", "Kowalczyk", "Kamiński", "Lewandowski", "Zieliński", "Szymański", "Woźniak",
   "Dąbrowski", "Kozłowski", "Jankowski", "Mazur", "Wojciechowski", "Kwiatkowski", "Krawczyk", "Kaczmarek", "Piotrowski", "Grabowski",
   "Zając", "Pawłowski", "Michalski", "Król", "Nowakowski", "Wieczorek", "Jabłoński", "Dudek", "Adamczyk", "Majewski",
@@ -36,13 +36,13 @@ const people = [];
 for (let i = 0; i < 20; i++) {
   const person = { gender: randChoice(genders) };
   if (person.gender === 'M') {
-    person.name = randChoice(male)
+    person.firstName = randChoice(male)
   }
   else {
-    person.name = randChoice(female)
+    person.firstName = randChoice(female)
   }
-  const firstNameIndex = Math.floor(Math.random() * firstName.length);
-  person.firstName = firstName[firstNameIndex];
+  const lastNameIndex = Math.floor(Math.random() * lastName.length);
+  person.lastName = lastName[lastNameIndex];
   person.age = Math.floor(Math.random() * (78 - 18 + 1)) + 18;
   people.push(person);
 }
