@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const genders = ['M', 'F'];
-
+// testing
 const female = [
   "Anna", "Maria", "Katarzyna", "Małgorzata", "Agnieszka", "Ewa", "Joanna", "Magdalena", "Aleksandra", "Natalia",
   "Dorota", "Iwona", "Patrycja", "Justyna", "Monika", "Karolina", "Kamila", "Barbara", "Aneta", "Kinga",
